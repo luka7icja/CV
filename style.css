@@ -1,0 +1,260 @@
+/*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
+
+body {
+  margin: auto;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+article {
+  padding-left: 1em;
+    padding-right: 1em
+}
+
+section{
+  padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0;
+    padding-top: 1em;
+}
+
+header, main {
+  margin: 0 auto;
+}
+
+header, footer {
+  padding: 1em;
+  text-align: center;
+  background-size: cover;
+    background-color: #A7B8BF;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  max-width: 1700px;
+    font-size: 16px;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header subtitle {
+  max-width: 1600px;
+    font-size: 16px;
+    margin:auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+footer section {
+  max-width: 1600px;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contact {
+    max-width: 700px;
+    font-size: 15px;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header img {
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+}
+
+h1 {
+  margin: 0.5em 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h3 {
+	max-width: 600px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #509e98;
+    padding-bottom: 1em
+}
+
+b {
+    color: #509e98;
+}
+
+
+a {
+  color: #509e98;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+a:active {
+  color: #509e97;
+}
+
+span {
+ color: #A7B8BF;
+ font-weight: normal;
+}
+
+main section{
+  border-bottom: 1px solid green;
+}
+
+main section:last-child {
+  border-bottom: none;
+}
+
+main {
+  max-width: 1600px;
+}
+
+.experience_item {
+  padding-bottom: 13px;	
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title {
+  color: #509e98;
+    font-size: 15px;
+  font-weight: 500;
+  flex: 0 0 25%;
+  max-width: 65%;
+}
+
+.experience_item .description {
+  flex: 0 0 75%;
+  max-width: 100%;
+}
+
+.experience_item .description p {
+	margin-top: 0;
+    text-align: justify;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow pointing downwards */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skills {
+margin-left: 0.5em;
+margin-right: 0.5em;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: center;
+}
+
+.skills .column {
+text-align: left;
+flex: 1;
+max-width: 23%; /* Szerokość ograniczona do 25% */
+margin: 0 0.5em; 
+}
+
+.skills .column:first-child {
+flex: 2; /* Pierwsza kolumna ma szerokość dwukrotnie większą niż pozostałe */
+max-width: 54%; /* Szerokość ograniczona do 54% */
+}
+
+.skills .column:nth-child(n+2) {
+flex: 1; /* Pozostałe kolumny mają szerokość 25% */
+}
+
+ul {
+	list-style-type: none;
+	margin-block-start: 0.5em;
+	padding-inline-start: 0;
+}
+
+ul li:before {
+	content: "○";
+	padding-right: 0.5em;
+	color: green;
+}
+
+header .fa {
+border: 1px solid white;
+text-decoration: none;
+color: white;
+border-radius: 50%;
+font-size: 1.5em;
+width: 1.5em;
+height: 1.5em;
+line-height: 1.5em;
+margin: 5px;
+text-align: center;
+margin-bottom: 0;
+}
+
+.responsibilities ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .responsibilities li {
+            margin-bottom: 1em;
+        }
+        .responsibilities li > span {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        .responsibilities ul ul li {
+            margin-bottom: 0.5em;
+        }
+
+/*@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+}
+*/
