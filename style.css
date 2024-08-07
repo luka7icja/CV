@@ -1,9 +1,37 @@
 /*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
 
+html {
+  background-color: #f6f7f8; /* Kolor tła dla całej strony */
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  background-size: cover;
+  background-color: #A7B8BF;
+  background-position: fixed;
+  color: white;
+ /* border-top-left-radius: 15px; /* (powoduje białe trójkąty) Zaokrąglanie lewego górnego rogu */
+ /* border-top-right-radius: 15px; /* Zaokrąglanie prawego górnego rogu */
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  background-size: cover;
+  background-color: #A7B8BF;
+  background-position: fixed;
+  color: white;
+ /* border-bottom-left-radius: 15px; /* Zaokrąglanie lewego dolnego rogu */
+ /* border-bottom-right-radius: 15px; /* Zaokrąglanie prawego dolnego rogu */
+}
+
 body {
   margin: auto;
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
+  max-width: 80%; /* 80% szerokości ekranu */
+    background-color: white;
 }
 
 article {
@@ -20,15 +48,6 @@ section{
 
 header, main {
   margin: 0 auto;
-}
-
-header, footer {
-  padding: 1em;
-  text-align: center;
-  background-size: cover;
-    background-color: #A7B8BF;
-  background-position: fixed;
-  color: white;
 }
 
 header section {
